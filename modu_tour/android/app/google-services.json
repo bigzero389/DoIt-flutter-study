@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "798718589116",
+    "project_id": "modutour-flutter-study",
+    "storage_bucket": "modutour-flutter-study.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798718589116:android:360851dd9f568d3414b8b9",
+        "android_client_info": {
+          "package_name": "kr.pe.bigzero.modu_tour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798718589116-0mq2f53p834sqj6pk7nevrsak0ne3ine.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaSyxqAR0mgI4J2IJpsMR05Rcz5mkWuKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798718589116-0mq2f53p834sqj6pk7nevrsak0ne3ine.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
