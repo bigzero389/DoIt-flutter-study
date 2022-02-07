@@ -48,18 +48,19 @@ class _TourDetailPage extends State<TourDetailPage> {
     });
 
     _reviewTextController = TextEditingController();
-    _GoogleMapCamera = CameraPosition( zoom: 16,
+    _GoogleMapCamera = CameraPosition(
       target: LatLng(double.parse(widget.tourData!.mapy.toString()),
         double.parse(widget.tourData!.mapx.toString())
-      ),
+      ),zoom: 16,
     );
     MarkerId markerId = MarkerId(widget.tourData.hashCode.toString());
-    marker = Marker( flat: true,
-        markerId: markerId,
-        position: LatLng(
-            double.parse(widget.tourData!.mapy.toString()),
-            double.parse(widget.tourData!.mapx.toString())
-        ),
+    marker = Marker(
+      position: LatLng(
+        double.parse(widget.tourData!.mapy.toString()),
+        double.parse(widget.tourData!.mapx.toString())
+      ),
+      flat: true,
+      markerId: markerId,
     );
     markers[markerId] = marker!;
     getDisableInfo();
