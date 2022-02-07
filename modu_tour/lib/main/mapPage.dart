@@ -12,7 +12,7 @@ class MapPage extends StatefulWidget {
   final Future<Database>? db;
   final String? id;
 
-  MapPage({Key? key, this.databaseReference, this.db, this.id}): super(key: key);
+  MapPage({this.databaseReference, this.db, this.id});
 
   @override
   State<StatefulWidget> createState() => _MapPage();

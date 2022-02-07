@@ -39,8 +39,8 @@ class _MainPage extends State<MainPage> with SingleTickerProviderStateMixin {
     return Scaffold(
       body: TabBarView(
         children: [
-          MapPage(),
-          FavoritePage(),
+          MapPage(databaseReference: reference!, db: widget.database, id: id!),
+          FavoritePage(databaseReference: reference!, db: widget.database, id: id!),
           SettingPage(),
         ],
         controller: controller,

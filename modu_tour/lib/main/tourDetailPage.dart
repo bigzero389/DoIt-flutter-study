@@ -14,7 +14,8 @@ class TourDetailPage extends StatefulWidget {
   final DatabaseReference? databaseReference;
   final String? id;
 
-  const TourDetailPage({Key? key, this.tourData, this.index, this.databaseReference, this.id}) : super(key: key);
+  // const TourDetailPage({Key? key, this.id, this.tourData, this.index, this.databaseReference,}) : super(key: key);
+  const TourDetailPage({this.id, this.tourData, this.index, this.databaseReference,});
 
   @override
   State<StatefulWidget> createState() => _TourDetailPage();
@@ -73,7 +74,7 @@ class _TourDetailPage extends State<TourDetailPage> {
             pinned: true,
             backgroundColor: Colors.deepOrangeAccent,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text( '${widget.tourData!.title}', style: const TextStyle(color: Colors.white, fontSize: 40), ),
+              title: Text( '${widget.tourData!.title}', style: const TextStyle(color: Colors.white, fontSize: 20), ),
               centerTitle: true,
               titlePadding: const EdgeInsets.only(top: 10),
             ),
